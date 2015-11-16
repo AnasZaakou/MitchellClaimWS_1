@@ -60,6 +60,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="DataModel.cd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\ClaimStore.xml">
