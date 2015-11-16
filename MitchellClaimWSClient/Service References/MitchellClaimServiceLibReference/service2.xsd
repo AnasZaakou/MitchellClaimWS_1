@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="LossInfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CauseOfLoss" type="tns:CauseOfLossCode" />
+      <xs:element minOccurs="0" name="CauseOfLossSpecified" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LossDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReportedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReportedDateSpecified" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LossInfoType" nillable="true" type="tns:LossInfoType" />
+  <xs:simpleType name="CauseOfLossCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Collision" />
+      <xs:enumeration value="Explosion" />
+      <xs:enumeration value="Fire" />
+      <xs:enumeration value="Hail" />
+      <xs:enumeration value="MechanicalBreakdown" />
+      <xs:enumeration value="Other" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CauseOfLossCode" nillable="true" type="tns:CauseOfLossCode" />
+  <xs:simpleType name="StatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OPEN" />
+      <xs:enumeration value="CLOSED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StatusCode" nillable="true" type="tns:StatusCode" />
+  <xs:complexType name="ArrayOfVehicleInfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleInfoType" nillable="true" type="tns:VehicleInfoType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleInfoType" nillable="true" type="tns:ArrayOfVehicleInfoType" />
+  <xs:complexType name="VehicleInfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DamageDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EngineDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExteriorColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicPlate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicPlateExpDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LicPlateExpDateSpecified" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LicPlateState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MakeDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mileage" type="xs:int" />
+      <xs:element minOccurs="0" name="MileageSpecified" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModelDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelYear" type="xs:int" />
+      <xs:element minOccurs="0" name="Vin" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleInfoType" nillable="true" type="tns:VehicleInfoType" />
+</xs:schema>

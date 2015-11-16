@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MitchellClaimWSApplication.ClaimService" CodeBehind="ClaimService.svc.cs" %>
