@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MitchellClaimType">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAFAAAAFAAAIiAABAAAABAAABAAgAgBAAACEAAAAKEg=</HashCode>
+      <FileName>App_Data\MitchellClaim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VehicleInfoType">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIQAAAAAACAAAAABYAABAAgASCAADGEBQJAAiASAEA=</HashCode>
+      <FileName>App_Data\MitchellClaim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LossInfoType">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAAAAAQAAIAAAABAAAQACEAACAAAAAAAAAEAA=</HashCode>
+      <FileName>App_Data\MitchellClaim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

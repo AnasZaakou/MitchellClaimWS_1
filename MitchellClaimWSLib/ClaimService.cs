@@ -40,7 +40,7 @@ namespace MitchellClaimWSLib
                 // Save the file locally to be manipulated
                 MitchellClaimXML.Save("App_Data/temp.xml");
             }
-            catch
+            catch(Exception ex)
             {
                 return false;
             }
